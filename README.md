@@ -54,6 +54,21 @@
 ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
 
+<details>
+<summary> 
+⭕ Hackathon Online Super AI Engineer Season3 LV1 ⭕
+</summary>
+ 
+#### Hackathon Online Super AI Engineer Season3   
+Topic | Dataset | Description | Ranking | Code
+------| ------- | ----------- | ---- | -----
+🔢 Image Processing  | Digit Recognition (Private) | - | 22/205 | Coming soon
+🌡️ IoTs and Robotics (Temp Prediction) |  UTunot sensor (Private) | - | 5/251 | Coming soon
+📡 Signal Processing | Signal from abnornal motor  (Private) | - | 4/172 | Coming soon 
+📝 Natural Language Processing (NER.) | LST20 (Private) |Fine-tuned BERT model to detect NER | 7/167 | Coming soon 
+🌐 Data Science and Big Data (Asset Prediction) | questionnaire data (Private) | Using AutoGluon to predict Asset| 1/208 | Coming soon 
+🖼️📝 Hybrid (OCR and NER.) | LST20 and Culture(Private) | - | 1/79 | Private
+</details>
 
 
 ## 📈 GitHub Stats
