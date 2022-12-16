@@ -54,22 +54,24 @@
 ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
 
-#### 🏆 Hackathon Online Super AI Engineer Season3 LV1 🏆 
+
+## Competition
+
 <details>
 <summary> 
-👉 Click Me 👈
+🏆 Hackathon Online Super AI Engineer Season3 LV1 🏆  
 </summary>
  
-#### Hackathon Online Super AI Engineer Season3 LV1 
+#### Competition by Kaggle
  ![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
 Topic | Dataset | Description |Ranking| Code
 ------| ------- | ----------- | ---- | -----
-🔢 Image Processing | Digit Recognition (Private) | CNN model to classify Digit | 22/205 | Coming soon
-🌡️ IoTs and Robotics (Temp Prediction) |  UTunoi sensor (Private) | Using catboost model to prdict Temp | 5/251 | Coming soon
-📡 Signal Processing | Signal from abnornal motor  (Private) | Using FFT and PSD for extect feacture in frequency domain | 4/172 | Coming soon 
-📝 Natural Language Processing (NER.) | LST20 (Private) |Fine-tuned BERT model to detect NER | 7/167 | Coming soon 
-🌐 Data Science and Big Data (Asset Prediction) | Questionnaire data (Private) | Using AutoGluon to predict Asset|🎖️1/208 | Coming soon 
-🖼️📝 Hybrid (OCR and NER.) | LST20 and Culture(Private) | using Tesseract for OCR and BERT model to detect NER (Culture) |🎖️1/79| Coming soon 
+🔢 [Image Processing](https://www.kaggle.com/competitions/hackathon-online-2022-image-processing/leaderboard) | Digit Recognition (Private) | CNN model to classify Digit | 22/205 | Coming soon
+🌡️ [IoTs and Robotics (Temp Prediction)](https://www.kaggle.com/competitions/ss3-hackathon-online-iots-and-robotics/leaderboard)  |  UTunoi sensor (Private) | Using catboost model to prdict Temp | 5/251 | Coming soon
+📡 [Signal Processing](https://www.kaggle.com/competitions/ss3-hackathon-online-signal-processing/leaderboard) | Signal from abnornal motor  (Private) | Using FFT and PSD for extect feacture in frequency domain | 4/172 | Coming soon 
+📝 [Natural Language Processing (NER.)](https://www.kaggle.com/competitions/ss3-hackathon-online-natural-language-processing/leaderboard) | LST20 (Private) |Fine-tuned BERT model to detect NER | 7/167 | Coming soon 
+🌐 [Data Science and Big Data (Asset Prediction)](https://www.kaggle.com/competitions/hackathon-online-data-science-and-big-data/leaderboard) | Questionnaire data (Private) | Using AutoGluon to predict Asset|🎖️1/208 | Coming soon 
+🖼️📝 [Hybrid (OCR and NER.)](https://www.kaggle.com/competitions/superai-hackathon-online-image-ner/leaderboard) | LST20 and Culture(Private) | using Tesseract for OCR and BERT model to detect NER (Culture) |🎖️1/79| Coming soon 
 
 </details>
 
