@@ -14,9 +14,9 @@
 
 ##### EDUCATION
 - 🏫 Science major at	Hatyaiwittayalai School, 2007-2013
-- 	:man_student: Physics Bachelor’s Degree at Prince of Songkla University (2013-2017)
-- 🎓 Physics Master’s Degree at Prince of Songkla University (2017-2021)
-- 🎙 I speak Thai (Native), English 󠁧󠁢󠁥󠁮(Working proficiency)
+- :man_student: Physics Bachelor’s Degree at Prince of Songkla University (2013-2017)
+- 🎓Physics Master’s Degree at Prince of Songkla University (2017-2021)
+
 
 
 ### Skills and Tools
