@@ -3,7 +3,7 @@
 <!-- ![Profile](https://scontent.fbkk2-3.fna.fbcdn.net/v/t39.30808-6/320383126_514855927278818_7435397505892045245_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Q7Ug55BK8sAAX9JT7El&_nc_ht=scontent.fbkk2-3.fna&oh=00_AfDyQ_pKGl83poWrCQDOB76ifG_gfMz573LqGXGBUfitgA&oe=63A19E5F | width=100) -->
 <img src="https://scontent.fbkk2-3.fna.fbcdn.net/v/t39.30808-6/320383126_514855927278818_7435397505892045245_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Q7Ug55BK8sAAX9JT7El&_nc_ht=scontent.fbkk2-3.fna&oh=00_AfDyQ_pKGl83poWrCQDOB76ifG_gfMz573LqGXGBUfitgA&oe=63A19E5F" width="200" height="200">
 
-##### Thank you Dawn Ai for the image
+##### Thank you Dawn Ai for the image 
 
 - 🔭 I’m currently working on Cargill Meats Thailand
 
@@ -50,13 +50,13 @@
 ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
 
 
-<img src="http://github-readme-streak-stats.herokuapp.com?user=konthee&theme=highcontrast" alt="streak"/>
-
-[![kontheee's github stats](https://github-readme-stats.vercel.app/api?username=konthee&hide=stars&count_private=true&show_icons=true&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)&nbsp;&nbsp;[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=konthee&layout=compact&langs_count=6&theme=dracula)](https://github.com/konthee)
 
 
+[![kontheee's github stats](https://github-readme-stats.vercel.app/api?username=konthee&hide=stars&count_private=true&show_icons=true&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)&nbsp;&nbsp;
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=konthee&layout=compact&langs_count=6&theme=dracula)](https://github.com/konthee)
 
-![Profile view](https://komarev.com/ghpvc/?username=Konthee)
+
+
 
 
 ### Contacts
@@ -64,7 +64,7 @@
  [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">](https://www.linkedin.com/in/konthee-boonmeeprakob-61691a25a/)
  [<img src="https://img.shields.io/badge/youtube-%23E4405F.svg?&style=for-the-badge&logo=youtube&logoColor=white">](https://www.youtube.com/channel/UCZAaXMK69djubSXXjga37xA)
 
-
+<img src="https://komarev.com/ghpvc/?username=Konthee&layout=compact&hide=html,css&theme=vision-friendly-dark">
 
 <!--
 **Konthee/Konthee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
