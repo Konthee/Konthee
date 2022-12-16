@@ -54,17 +54,18 @@
 ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
 
+
 <details>
 <summary> 
-🏆 Hackathon Online Super AI Engineer Season3 LV1 🏆
+🏆 Hackathon Online Super AI Engineer Season3 LV1 🏆 
 </summary>
  
-#### Hackathon Online Super AI Engineer Season3   
-
-Topic | Dataset | Description | Ranking | Code
+#### Hackathon Online Super AI Engineer Season3 LV1
+ ![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
+Topic | Dataset | Description |👑Ranking| Code
 ------| ------- | ----------- | ---- | -----
 🔢 Image Processing | Digit Recognition (Private) | CNN model to classify Digit | 22/205 | Coming soon
-🌡️ IoTs and Robotics (Temp Prediction) |  UTunot sensor (Private) | Using catboost model to prdict Temp | 5/251 | Coming soon
+🌡️ IoTs and Robotics (Temp Prediction) |  UTunoi sensor (Private) | Using catboost model to prdict Temp | 5/251 | Coming soon
 📡 Signal Processing | Signal from abnornal motor  (Private) | Using FFT and PSD for extect feacture in frequency domain | 4/172 | Coming soon 
 📝 Natural Language Processing (NER.) | LST20 (Private) |Fine-tuned BERT model to detect NER | 7/167 | Coming soon 
 🌐 Data Science and Big Data (Asset Prediction) | Questionnaire data (Private) | Using AutoGluon to predict Asset|🎖️1/208 | Coming soon 
@@ -91,6 +92,8 @@ Topic | Dataset | Description | Ranking | Code
 
 <!--
 **Konthee/Konthee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
 
 Here are some ideas to get you started:
 https://dev.to/envoy_/150-badges-for-github-pnk
