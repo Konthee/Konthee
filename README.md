@@ -54,10 +54,10 @@
 ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
 
-
+#### 🏆 Hackathon Online Super AI Engineer Season3 LV1 🏆 
 <details>
 <summary> 
-🏆 Hackathon Online Super AI Engineer Season3 LV1 🏆 
+👉 Click Me 👈
 </summary>
  
 #### Hackathon Online Super AI Engineer Season3 LV1 
