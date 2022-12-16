@@ -8,11 +8,11 @@
 
 
 ### About me
-#### WORK EXPERIENCE
+##### WORK EXPERIENCE
 - 🔭 I’m currently working as Data Scientist on Cargill Meats Thailand (2022-preset)
 - 🔭 I had been work as Research Assistant on Vidyasirimedhi Institute of Science and Technology (VISTEC) (2021-2022) 
 
-#### EDUCATION
+##### EDUCATION
 - 🏫 Science major at	Hatyaiwittayalai School, 2007-2013
 - 🎓 Physics Bachelor’s Degree at Prince of Songkla University (2013-2017)
 - 🎓 Physics Master’s Degree at Prince of Songkla University (2017-2021)
@@ -64,6 +64,7 @@
 
 
 ### Contacts
+ [<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">](mailto:konthee1995@gmail.com)
  [<img src="https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white">](https://www.facebook.com/konthee.b/)
  [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">](https://www.linkedin.com/in/konthee-boonmeeprakob-61691a25a/)
  [<img src="https://img.shields.io/badge/youtube-%23E4405F.svg?&style=for-the-badge&logo=youtube&logoColor=white">](https://www.youtube.com/channel/UCZAaXMK69djubSXXjga37xA)
