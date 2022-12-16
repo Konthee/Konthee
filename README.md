@@ -1,4 +1,4 @@
-## Hi I'm Konthee Boonmeeprakob, Welcome to my Github Profile 👋
+## Hi I'm Konthee Boonmeeprakob, Welcome to my Github Profile 👋 <img src="https://komarev.com/ghpvc/?username=Konthee&layout=compact&hide=html,css&theme=vision-friendly-dark">
 
 ### About me
 <!-- ![Profile](https://scontent.fbkk2-3.fna.fbcdn.net/v/t39.30808-6/320383126_514855927278818_7435397505892045245_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Q7Ug55BK8sAAX9JT7El&_nc_ht=scontent.fbkk2-3.fna&oh=00_AfDyQ_pKGl83poWrCQDOB76ifG_gfMz573LqGXGBUfitgA&oe=63A19E5F | width=100) -->
@@ -64,13 +64,13 @@
 
 
 
-### Contacts
+## Contacts
  [<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">](mailto:konthee1995@gmail.com)
  [<img src="https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white">](https://www.facebook.com/konthee.b/)
  [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">](https://www.linkedin.com/in/konthee-boonmeeprakob-61691a25a/)
- [<img src="https://img.shields.io/badge/youtube-%23E4405F.svg?&style=for-the-badge&logo=youtube&logoColor=white">](https://www.youtube.com/channel/UCZAaXMK69djubSXXjga37xA)
 
-<img src="https://komarev.com/ghpvc/?username=Konthee&layout=compact&hide=html,css&theme=vision-friendly-dark">
+
+
 
 <!--
 **Konthee/Konthee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
