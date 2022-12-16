@@ -5,10 +5,14 @@
 
 ##### Thank you Dawn Ai for the image 
 
-- 🔭 I’m currently working on Cargill Meats Thailand
 
 
 ### About me
+#### WORK EXPERIENCE
+- 🔭 I’m currently working as Data Scientist on Cargill Meats Thailand (2022-preset)
+- 🔭 I had been work as Research Assistant on Vidyasirimedhi Institute of Science and Technology (VISTEC) (2021-2022) 
+
+#### EDUCATION
 - 🏫 Science major at	Hatyaiwittayalai School, 2007-2013
 - 🎓 Physics Bachelor’s Degree at Prince of Songkla University (2013-2017)
 - 🎓 Physics Master’s Degree at Prince of Songkla University (2017-2021)
