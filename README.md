@@ -56,18 +56,20 @@
 
 <details>
 <summary> 
-⭕ Hackathon Online Super AI Engineer Season3 LV1 ⭕
+🏆 Hackathon Online Super AI Engineer Season3 LV1 🏆
 </summary>
  
 #### Hackathon Online Super AI Engineer Season3   
+
 Topic | Dataset | Description | Ranking | Code
 ------| ------- | ----------- | ---- | -----
-🔢 Image Processing  | Digit Recognition (Private) | - | 22/205 | Coming soon
-🌡️ IoTs and Robotics (Temp Prediction) |  UTunot sensor (Private) | - | 5/251 | Coming soon
-📡 Signal Processing | Signal from abnornal motor  (Private) | - | 4/172 | Coming soon 
+🔢 Image Processing | Digit Recognition (Private) | CNN model to classify Digit | 22/205 | Coming soon
+🌡️ IoTs and Robotics (Temp Prediction) |  UTunot sensor (Private) | Using catboost model to prdict Temp | 5/251 | Coming soon
+📡 Signal Processing | Signal from abnornal motor  (Private) | Using FFT and PSD for extect feacture in frequency domain | 4/172 | Coming soon 
 📝 Natural Language Processing (NER.) | LST20 (Private) |Fine-tuned BERT model to detect NER | 7/167 | Coming soon 
-🌐 Data Science and Big Data (Asset Prediction) | questionnaire data (Private) | Using AutoGluon to predict Asset| 1/208 | Coming soon 
-🖼️📝 Hybrid (OCR and NER.) | LST20 and Culture(Private) | - | 1/79 | Private
+🌐 Data Science and Big Data (Asset Prediction) | Questionnaire data (Private) | Using AutoGluon to predict Asset|🎖️1/208 | Coming soon 
+🖼️📝 Hybrid (OCR and NER.) | LST20 and Culture(Private) | using Tesseract for OCR and BERT model to detect NER (Culture) |🎖️1/79| Coming soon 
+
 </details>
 
 
