@@ -17,7 +17,8 @@
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
 #### Web Develpment
-![CSS](https://camo.githubusercontent.com/9fe0ddca8c80fd49703246ca3b9a894ddfdc9c1c80f6ab5de92bbe91471dbab8/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d4353533326636f6c6f723d313537324236266c6f676f3d43535333266c6f676f436f6c6f723d464646464646266c6162656c3d)
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
 
 
 #### Machine Learning
@@ -44,6 +45,8 @@
  [<img src="https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white">](https://www.facebook.com/konthee.b/)
  [<img src="https://img.shields.io/badge/youtube-%23E4405F.svg?&style=for-the-badge&logo=youtube&logoColor=white">](https://www.youtube.com/channel/UCZAaXMK69djubSXXjga37xA)
 
+
+https://camo.githubusercontent.com/596357d8b52257c282f713b78daa05587ee258c2822b1738be87afe6bcce92da/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d446973636f726426636f6c6f723d353836354632266c6f676f3d446973636f7264266c6f676f436f6c6f723d464646464646266c6162656c3d
 <!--
 **Konthee/Konthee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
