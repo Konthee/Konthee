@@ -10,7 +10,7 @@
 ### About me
 ##### WORK EXPERIENCE
 - :man_technologist: I’m currently working as Data Scientist on Cargill Meats Thailand (2022-preset)
-- :man_scientist I had been work as Research Assistant on Vidyasirimedhi Institute of Science and Technology (VISTEC) (2021-2022) 
+- :man_scientist: I had been work as Research Assistant on Vidyasirimedhi Institute of Science and Technology (VISTEC) (2021-2022) 
 
 ##### EDUCATION
 - 🏫 Science major at	Hatyaiwittayalai School, 2007-2013
