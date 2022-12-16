@@ -60,9 +60,9 @@
 🏆 Hackathon Online Super AI Engineer Season3 LV1 🏆 
 </summary>
  
-#### Hackathon Online Super AI Engineer Season3 LV1
+#### Hackathon Online Super AI Engineer Season3 LV1 
  ![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
-Topic | Dataset | Description |👑Ranking| Code
+Topic | Dataset | Description |Ranking| Code
 ------| ------- | ----------- | ---- | -----
 🔢 Image Processing | Digit Recognition (Private) | CNN model to classify Digit | 22/205 | Coming soon
 🌡️ IoTs and Robotics (Temp Prediction) |  UTunoi sensor (Private) | Using catboost model to prdict Temp | 5/251 | Coming soon
