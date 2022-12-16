@@ -9,12 +9,12 @@
 
 ### About me
 ##### WORK EXPERIENCE
-- 🔭 I’m currently working as Data Scientist on Cargill Meats Thailand (2022-preset)
-- 🔭 I had been work as Research Assistant on Vidyasirimedhi Institute of Science and Technology (VISTEC) (2021-2022) 
+- :man_technologist: I’m currently working as Data Scientist on Cargill Meats Thailand (2022-preset)
+- :man_scientist I had been work as Research Assistant on Vidyasirimedhi Institute of Science and Technology (VISTEC) (2021-2022) 
 
 ##### EDUCATION
 - 🏫 Science major at	Hatyaiwittayalai School, 2007-2013
-- 🎓 Physics Bachelor’s Degree at Prince of Songkla University (2013-2017)
+- 	:man_student: Physics Bachelor’s Degree at Prince of Songkla University (2013-2017)
 - 🎓 Physics Master’s Degree at Prince of Songkla University (2017-2021)
 - 🎙 I speak Thai (Native), English 󠁧󠁢󠁥󠁮(Working proficiency)
 
@@ -78,6 +78,8 @@ Here are some ideas to get you started:
 https://dev.to/envoy_/150-badges-for-github-pnk
 
 https://ileriayo.github.io/markdown-badges/
+
+https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
