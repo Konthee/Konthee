@@ -10,8 +10,10 @@
 
 
 ##### WORK EXPERIENCE
-- :man_technologist:  I had been work as Data Scientist on [Cargill Meats Thailand](https://www.cargill.co.th/) (2022-2023)
-- :man_scientist: I had been work as Research Assistant on [Vidyasirimedhi Institute of Science and Technology (VISTEC)](https://www.vistec.ac.th/) (2021-2022) 
+- 👨‍💻 I am working as Machine Learning Scientist on [Finema](https://finema.co) (Sep 2023 – Present)
+- 👨‍💻 I had been work as Data Engineer on [Sritrang IBC](https://www.sritranggroup.com) (Jul 2023 – Aug 2023)
+- :man_technologist:  I had been work as Data Scientist on [Cargill Meats Thailand](https://www.cargill.co.th/) (Aug 2022 – Feb 2023)
+- :man_scientist: I had been work as Research Assistant on [Vidyasirimedhi Institute of Science and Technology (VISTEC)](https://www.vistec.ac.th/) (Jul 2021 – Aug 2022) 
 
 ##### EDUCATION
 - 🏫 Science major at	Hatyaiwittayalai School  (2007-2013)
