@@ -10,7 +10,7 @@
 
 
 ##### WORK EXPERIENCE
-- 👨‍💻 I'm work as Data Scientist on [Big Data Institute](https://bdi.or.th) (Sep 2023 – Present)
+- 👨‍💻 I'm work as Data Scientist on [Big Data Institute](https://bdi.or.th) (May 2024 – Present)
 - 👨‍💻 I had been work as Research Assistant on [NECTEC](https://www.nectec.or.th) (Feb 2024 – Apr 2024)
 - 👨‍💻 I had been work as  Machine Learning Scientist on [Finema](https://finema.co) (Sep 2023 – Present)
 - 👨‍💻 I had been work as Data Engineer on [Sritrang IBC](https://www.sritranggroup.com) (Jul 2023 – Aug 2023)
