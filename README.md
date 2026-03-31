@@ -3,10 +3,10 @@
 https://konthee.github.io/Konthee/
 
 ### About me
-<img src="https://user-images.githubusercontent.com/98932144/213140252-0eecf800-1c91-466f-80d7-b39d063dcf67.jpg" width="200" height="200">
+<img src="profile.png" width="200" height="200">
 
 
-###### Thank you [Dawn Ai](https://apps.apple.com/us/app/dawn-ai-avatars/id1643890882) for the image 
+
 
 
 
