@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="profile.png" width="180" alt="Konthee Boonmeeprakob" style="border-radius: 50%;" />
+<img src="profile.png" width="180" alt="Konthee Boonmeeprakob" />
 
 # 👋 Hi, I'm Konthee Boonmeeprakob
 
@@ -160,17 +160,10 @@ My work spans:
 
 ---
 
-
 ## 📈 GitHub Stats
 
-<p align="center">
-  <a href="https://github.com/Konthee">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Konthee&show_icons=true&theme=dracula&include_all_commits=true" />
-  </a>
-  <a href="https://github.com/Konthee">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Konthee&layout=compact&langs_count=8&theme=dracula" />
-  </a>
-</p>
+[![kontheee's github stats](https://github-readme-stats.vercel.app/api?username=konthee&hide=stars&show_icons=true&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)&nbsp;&nbsp;
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=konthee&layout=compact&langs_count=6&theme=dracula)](https://github.com/konthee)
 
 ---
 
