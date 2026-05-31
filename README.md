@@ -163,8 +163,14 @@ My work spans:
 
 ## 📈 GitHub Stats
 
-[![kontheee's github stats](https://github-readme-stats.vercel.app/api?username=konthee&hide=stars&show_icons=true&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)&nbsp;&nbsp;
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=konthee&layout=compact&langs_count=6&theme=dracula)](https://github.com/konthee)
+<p align="center">
+  <a href="https://github.com/Konthee">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Konthee&show_icons=true&theme=dracula&include_all_commits=true" />
+  </a>
+  <a href="https://github.com/Konthee">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Konthee&layout=compact&langs_count=8&theme=dracula" />
+  </a>
+</p>
 
 ---
 
