@@ -160,16 +160,21 @@ My work spans:
 
 ---
 
-## 📈 GitHub Stats
-
-<div align="center">
 
 ## 📈 GitHub Stats
 
-[![kontheee's github stats](https://github-readme-stats.vercel.app/api?username=konthee&hide=stars&count_private=true&show_icons=true&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)&nbsp;&nbsp;
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=konthee&layout=compact&langs_count=6&theme=dracula)](https://github.com/konthee)
+<p align="center">
 
-</div>
+  <img src="https://github-readme-stats.vercel.app/api?username=Konthee&hide=stars&count_private=true&show_icons=true&theme=dracula" alt="Konthee's GitHub stats" />
+
+</p>
+
+<p align="center">
+
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Konthee&layout=compact&langs_count=6&theme=dracula" alt="Top Languages" />
+
+</p>
+
 
 ---
 
