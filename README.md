@@ -9,7 +9,7 @@
 
 I build production-grade AI systems — from **LLM fine-tuning**, **Thai NLP**, **OCR**, **ASR**, and **RAG**, to **computer vision pipelines**, **forecasting models**, and **BigQuery-integrated automation**.
 
-**4+ years experience · 20+ AI projects · 17+ hackathon / benchmark wins**
+**5+ years experience · 20+ AI projects · 17+ hackathon / benchmark wins**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-konthee.github.io-0A66C2?style=for-the-badge&logo=githubpages&logoColor=white)](https://konthee.github.io/Konthee/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Konthee%20Boonmeeprakob-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/konthee-boonmeeprakob-61691a25a/)
