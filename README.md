@@ -4,12 +4,12 @@
 
 # 👋 Hi, I'm Konthee Boonmeeprakob
 
-### Data Scientist · Machine Learning Engineer · AI Researcher  
+### Applied AI Engineer · Data Scientist  
 **Bangkok, Thailand**
 
-I build production-grade AI systems — from **LLM fine-tuning**, **Thai NLP**, **OCR**, **ASR**, and **RAG**, to **computer vision pipelines**, **forecasting models**, and **BigQuery-integrated automation**.
+I build applied AI systems for Thai-language documents, speech, and data. My work spans **multimodal document extraction**, **retrieval-augmented generation (RAG)**, **computer vision**, and **automated data pipelines**.
 
-**5+ years experience · 20+ AI projects · 17+ hackathon / benchmark wins**
+**Thai document AI · Speech recognition · ML and data engineering**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-konthee.github.io-0A66C2?style=for-the-badge&logo=githubpages&logoColor=white)](https://konthee.github.io/Konthee/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Konthee%20Boonmeeprakob-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/konthee-boonmeeprakob-61691a25a/)
@@ -22,28 +22,23 @@ I build production-grade AI systems — from **LLM fine-tuning**, **Thai NLP**, 
 
 ## 🚀 About Me
 
-I'm a Data Scientist and Machine Learning Engineer with hands-on experience turning research-grade models into practical systems used in real workflows.
+My background is in physics and machine learning. I work across modeling, data pipelines, and the interfaces people use to get answers or complete tasks.
 
-My work spans:
-
-- 🧠 **LLMs, RAG, NLP, OCR, ASR, and multimodal AI**
-- 👁️ **Computer vision** for detection, counting, classification, and analytics
-- 📊 **Forecasting and time-series modeling**
-- 🧾 **Thai document intelligence** and OCR for real-world documents
-- ⚙️ **Workflow automation** with BigQuery, n8n, Docker, SQL, and Python
-- 🏆 National AI hackathons and benchmark competitions
+- **Document and speech AI:** Thai handwriting and identity-document OCR, Thai speech recognition, LLM fine-tuning, and multimodal extraction.
+- **Search and data access:** RAG and conversational interfaces for finding documents and querying structured data.
+- **ML and data engineering:** Computer vision, time-series forecasting, and workflow automation with Python, SQL, BigQuery, Docker, and n8n.
 
 ---
 
 ## 💼 Experience
 
 ### Big Data Institute (BDI) — Data Scientist  
-**May 2024 – Present · Bangkok, Thailand**
+**May 2024 – Jul 2026 · Bangkok, Thailand**
 
-- Developed computer vision systems to count pedestrians and vehicles in downtown Phuket for urban analytics and mobility planning.
-- Built an end-to-end Thai handwritten receipt-processing pipeline using multimodal LLMs to extract vendor, date, line-item, and total fields into BigQuery.
-- Automated recurring operational data workflows using n8n and BigQuery integrations.
-- Delivered a RAG LINE chatbot integrated with BigQuery for real-time lookup and user support.
+- Built a multimodal pipeline that extracts structured fields from handwritten Thai receipts and loads them into BigQuery.
+- Developed a RAG chatbot on LINE for looking up information from BigQuery.
+- Automated recurring data workflows using n8n and BigQuery.
+- Developed computer vision workflows to count pedestrians and vehicles in Phuket for urban mobility analysis.
 
 ### NECTEC — Research Assistant  
 **Feb 2024 – Apr 2024 · Bangkok, Thailand**
@@ -169,9 +164,9 @@ My work spans:
 
 <div align="center">
 
-### Let's build something great.
+### Open to collaboration
 
-Open to collaborations on **AI research**, **data science projects**, and **innovative hackathon ideas**.
+I'm interested in **Thai-language AI**, **document intelligence**, and **applied machine learning**.
 
 📧 **konthee1995@gmail.com** · 🌐 **[konthee.github.io/Konthee](https://konthee.github.io/Konthee/)**
 
