@@ -33,7 +33,7 @@ My background is in physics and machine learning. I work across modeling, data p
 ## 💼 Experience
 
 ### Big Data Institute (BDI) — Data Scientist  
-**May 2024 – Jul 2026 · Bangkok, Thailand**
+**May 2024 – Present · Bangkok, Thailand**
 
 - Built a multimodal pipeline that extracts structured fields from handwritten Thai receipts and loads them into BigQuery.
 - Developed a RAG chatbot on LINE for looking up information from BigQuery.
