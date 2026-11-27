@@ -52,12 +52,18 @@ section{padding:75px 0;border-bottom:1px solid var(--line)}.sec-head{display:gri
 @media(max-width:860px){.competition-deck{grid-template-columns:1fr}}
 @media(max-width:600px){.competition-runway{--stride:clamp(150px,37svh,275px)}.competition-card .award,[data-sequenced] .competition-card .award{grid-template-columns:1fr;min-height:0}.competition-card .art{min-height:91px;padding:10px 12px}.competition-card .art strong{font-size:31px}.competition-card .card-copy{padding:12px}.competition-card .card-copy h3{font-size:18px}.competition-card .card-copy p,.competition-card .textlink{font-size:13px}.competition-prompt{display:none}.competition-count{font-size:12px}.competition-controls:not([hidden]){gap:4px}.competition-buttons{gap:4px}.competition-buttons .tool{width:33px;height:33px}.competition-mode.btn{min-height:33px}}
 .demo-cta{align-self:flex-start;min-height:35px;font-size:13px;padding:5px 12px;margin-top:2px}.demo-cta+.textlink{margin-top:0;padding-top:0}
+
+.language-switch{display:inline-flex;align-items:center;gap:2px;min-width:max-content;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--panel)}
+.language-option{display:grid;place-items:center;min-width:40px;min-height:36px;padding:0 7px;border:0;border-radius:999px;background:transparent;color:var(--muted);font:800 12px/1 var(--sans);letter-spacing:.025em}
+.language-option:hover{color:var(--ink);background:var(--panel2)}.language-option[aria-pressed=true]{background:var(--lav);color:var(--bg)}[data-theme=light] .language-option[aria-pressed=true]{color:#fff}
+.language-option:focus-visible{outline-offset:1px}.language-option{touch-action:manipulation}
+@media(max-width:570px){.language-switch{gap:0;padding:2px}.language-option{min-height:36px;min-width:34px;padding-inline:5px}.tools{gap:5px}}
 </style></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap">
 <a class="brand" href="#home" aria-label="Konthee, back to top"><i aria-hidden="true">K.</i>KONTHEE</a><nav class="nav" aria-label="Main navigation"><a class="nav-item" href="#work">Applied Work</a><a class="nav-item" href="#experience">Experience</a><a class="nav-item" href="#education">Education</a><a class="nav-item" href="#awards">Awards</a></nav>
 <div class="tools" hidden><button class="tool theme" id="theme" type="button" aria-label="Switch to light theme" title="Switch to light theme"><svg class="bulb" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 16c0-2-3-3-3-6a6.5 6.5 0 1 1 13 0c0 3-3 4-3 6M9 17h6m-5 3h4M12 1v1M3 5l1 1m16 0 1-1"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.2a8.8 8.8 0 0 1-11.7-11.7 8.8 8.8 0 1 0 11.7 11.7Z"/></svg></button>
-<button class="tool" id="language" type="button" lang="th" aria-label="เปลี่ยนเป็นภาษาไทย">ไทย</button>
+<div class="language-switch" id="language" role="group" aria-label="Website language"><button class="language-option" type="button" data-lang="th" lang="th" aria-label="ไทย" aria-pressed="false">TH</button><button class="language-option" type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button></div>
 <button class="tool motion" id="motion" type="button" aria-label="Pause motion" title="Pause motion" hidden><svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v14m6-14v14"/></svg><svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 12 7-12 7z"/></svg></button></div>
 </div><div class="meter" aria-hidden="true"></div></header>
 <main id="main" tabindex="-1">
@@ -121,6 +127,7 @@ const dict={"I build Thai-language AI that turns conversations, documents and sc
 const root=document.documentElement;
 const $=s=>document.querySelector(s);
 const theme=$('#theme'),language=$('#language'),motion=$('#motion');
+const languageOptions=[...language.querySelectorAll('button[data-lang]')];
 const reduce=matchMedia('(prefers-reduced-motion: reduce)');
 const get=k=>{try{return localStorage.getItem('kportfolio:v3:'+k)}catch{return null}};
 const set=(k,v)=>{try{localStorage.setItem('kportfolio:v3:'+k,v)}catch{}};
@@ -153,14 +160,16 @@ function applyLanguage(){
  root.lang=lang;
  for(const {node,raw,key} of nodes)node.nodeValue=lang==='th'?raw.replace(key,()=>dict[key]):raw;
  for(const {node,attr,key} of attrs)node.setAttribute(attr,lang==='th'?dict[key]:key);
- language.lang=lang==='th'?'en':'th';
- language.textContent=t('ไทย','EN');
- label(language,t('เปลี่ยนเป็นภาษาไทย','Switch to English'));
+ language.setAttribute('aria-label',t('Website language','ภาษาของเว็บไซต์'));
+ for(const option of languageOptions)option.setAttribute('aria-pressed',String(option.dataset.lang===lang));
  document.title=t('Konthee Boonmeeprakob | Applied AI Portfolio','กนธี บุญมีประกอบ | ผลงาน AI ประยุกต์');
  applyTheme();applyMotion();
 }
 theme.addEventListener('click',()=>{mode=mode==='dark'?'light':'dark';set('theme',mode);applyTheme()});
-language.addEventListener('click',()=>{lang=lang==='en'?'th':'en';set('language',lang);applyLanguage()});
+for(const option of languageOptions){option.addEventListener('click',()=>{
+ if(lang===option.dataset.lang)return;
+ lang=option.dataset.lang;set('language',lang);applyLanguage();syncCompetition();renderCompetition();
+});}
 motion.addEventListener('click',()=>{paused=!paused;set('motion',paused?'off':'on');applyMotion()});
 reduce.addEventListener?.('change',applyMotion);
 $('.tools').hidden=false;
@@ -232,7 +241,7 @@ showAll.addEventListener('click',()=>{
  const top=runway.getBoundingClientRect().top+scrollY-stageTop;
  allMode=!allMode;syncCompetition();scrollTo({top,behavior:'instant'});renderCompetition();
 });
-language.addEventListener('click',()=>{syncCompetition();renderCompetition()});
+
 motion.addEventListener('click',()=>{syncCompetition();renderCompetition()});
 reduce.addEventListener?.('change',()=>{syncCompetition();renderCompetition()});
 shortScreen.addEventListener?.('change',()=>{syncCompetition();renderCompetition()});
