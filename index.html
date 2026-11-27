@@ -30,7 +30,7 @@ section{padding:75px 0;border-bottom:1px solid var(--line)}.sec-head{display:gri
 @media(max-width:600px){#awards .stat{padding:9px 4px}.contact{padding:27px 0}}
 
 .competition-runway{--stage-top:96px;--stride:clamp(175px,42svh,350px);margin-top:22px}
-.competition-runway[data-sequenced]{padding-bottom:calc(var(--stride)*var(--slides))}
+.competition-runway[data-sequenced]::after{content:"";display:block;height:calc(var(--stride)*var(--slides));pointer-events:none}
 .competition-runway[data-sequenced] .competition-stage{position:sticky;top:var(--stage-top);isolation:isolate}
 .competition-controls:not([hidden]){display:flex;align-items:center;justify-content:space-between;gap:9px;margin-bottom:10px}
 .competition-counter,.competition-buttons{display:flex;align-items:center;flex-wrap:wrap;gap:7px}
