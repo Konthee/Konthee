@@ -134,7 +134,7 @@ section{padding:75px 0;border-bottom:1px solid var(--line)}.sec-head{display:gri
 
 .competition-runway[data-sequenced] .competition-stage{overflow-anchor:none}
 [data-sequenced] .competition-card,[data-sequenced] .competition-card .award:hover{transform:none}
-@media(min-width:901px){.competition-trail{padding-bottom:clamp(170px,33svh,320px)}.competition-trail::before{bottom:clamp(170px,33svh,320px)}}
+.competition-runway[data-sequenced] .competition-trail{padding-bottom:var(--pin-exit-pad,220px)}.competition-runway[data-sequenced] .competition-trail::before{bottom:var(--pin-exit-pad,220px)}
 </style></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap">
@@ -299,6 +299,8 @@ function syncCompetition(){
   const ceiling=Math.max(floor,innerHeight-controlsBeforeCard-cardReserve-16);
   stageTop=Math.round(clamp(innerHeight*(compact?.35:.485)-controlsBeforeCard,floor,ceiling));
   runway.style.setProperty('--stage-top',stageTop+'px');
+  const stepFocus=compact?Math.min(innerHeight*.76,navHeight+450):Math.min(innerHeight*.48,navHeight+275);
+  runway.style.setProperty('--pin-exit-pad',Math.max(125,Math.ceil(stageTop+controlsBeforeCard+cardReserve-stepFocus+32))+'px');
  }
  if(!sequenced){
   active=-1;
