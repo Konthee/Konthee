@@ -148,10 +148,10 @@ My background is in physics and machine learning. I work across modeling, data p
 ## 🎓 Education
 
 - **Master’s Degree in Physics**, Prince of Songkla University  
-  GPA 4.00 · DPST Scholarship · 2017–2021
+  GPA 4.00 · 2017–2021
 
 - **Bachelor’s Degree in Physics**, Prince of Songkla University  
-  First-Class Honors · GPA 3.84 · DPST Scholarship · 2013–2017
+  First-Class Honors · GPA 3.84 · 2013–2017
 
 ---
 
