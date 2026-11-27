@@ -42,7 +42,7 @@ section{padding:75px 0;border-bottom:1px solid var(--line)}.sec-head{display:gri
 .competition-deck{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:0;padding:0}
 [data-sequenced] .competition-deck{grid-template-columns:minmax(0,1fr)}
 .competition-card[hidden]{display:none}.competition-card{min-width:0}
-[data-sequenced] .competition-card{opacity:var(--card-opacity,1);transform:translateY(var(--card-shift,0px))}
+[data-sequenced] .competition-card{opacity:var(--card-opacity,1);transform:translateY(var(--card-shift,0px)) scale(var(--card-scale,1));transform-origin:50% 45%}
 .competition-date{display:flex;align-items:center;gap:9px;margin-bottom:7px;color:var(--gold);font:700 12px var(--mono)}
 .competition-no{color:var(--muted);padding:3px 6px;border:1px solid var(--line);border-radius:5px}
 .competition-card .award{min-height:150px;display:grid;grid-template-columns:minmax(0,.77fr) minmax(0,1.23fr);height:calc(100% - 31px)}
@@ -58,6 +58,17 @@ section{padding:75px 0;border-bottom:1px solid var(--line)}.sec-head{display:gri
 .language-option:hover{color:var(--ink);background:var(--panel2)}.language-option[aria-pressed=true]{background:var(--lav);color:var(--bg)}[data-theme=light] .language-option[aria-pressed=true]{color:#fff}
 .language-option:focus-visible{outline-offset:1px}.language-option{touch-action:manipulation}
 @media(max-width:570px){.language-switch{gap:0;padding:2px}.language-option{min-height:36px;min-width:34px;padding-inline:5px}.tools{gap:5px}}
+
+.competition-context{display:none}
+@media(min-width:861px){
+ [data-sequenced] .competition-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(170px,.30fr);gap:24px;align-items:start}
+ [data-sequenced] .competition-context{position:relative;display:grid;gap:12px;list-style:none;margin:0;padding:4px 0 4px 19px;border-left:1px solid var(--line)}
+ .competition-context li{position:relative;min-width:0;color:var(--muted);font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+ .competition-context li::before{position:absolute;content:"";top:6px;left:-23px;background:var(--line);width:7px;height:7px;border-radius:50%}
+ .competition-context li[data-highlight]{color:var(--ink);font-weight:750}
+ .competition-context li[data-highlight]::before{background:var(--gold);box-shadow:0 0 12px var(--gold)}
+ .competition-context li span{display:block}.competition-context li span:first-child{font:650 11px var(--mono);color:var(--lav);margin-bottom:2px}
+}
 </style></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap">
@@ -100,7 +111,7 @@ section{padding:75px 0;border-bottom:1px solid var(--line)}.sec-head{display:gri
 <div class="competition-runway"><div class="competition-stage">
 <div class="competition-controls" hidden><div class="competition-counter"><span class="competition-count" aria-hidden="true">01 / 18</span><span class="competition-prompt">Scroll to explore</span></div><div class="competition-buttons"><button class="tool competition-prev" aria-label="Previous competition" type="button"><span aria-hidden="true">↑</span></button><button class="tool competition-next" aria-label="Next competition" type="button"><span aria-hidden="true">↓</span></button><button class="competition-mode btn" type="button">Show all competitions</button></div></div>
 <div class="competition-rail" aria-hidden="true"><span></span></div>
-<ol class="competition-deck" aria-label="Competition highlights timeline"><li class="competition-card"><p class="competition-date"><span class="competition-no" aria-hidden="true">01</span><time datetime="2022-12">Dec 2022</time></p><article class="award"><div class="art gold archive-art" aria-hidden="true"><div><small>AI</small><strong>I</strong></div></div><div class="card-copy"><h3>Hackathon — Image NER</h3><p>(Dec 2022): 🥇 Winner · Tesseract OCR + Transformer models for named entity recognition from images</p></div></article></li>
+<div class="competition-layout"><ol class="competition-deck" aria-label="Competition highlights timeline"><li class="competition-card"><p class="competition-date"><span class="competition-no" aria-hidden="true">01</span><time datetime="2022-12">Dec 2022</time></p><article class="award"><div class="art gold archive-art" aria-hidden="true"><div><small>AI</small><strong>I</strong></div></div><div class="card-copy"><h3>Hackathon — Image NER</h3><p>(Dec 2022): 🥇 Winner · Tesseract OCR + Transformer models for named entity recognition from images</p></div></article></li>
 <li class="competition-card"><p class="competition-date"><span class="competition-no" aria-hidden="true">02</span><time datetime="2023-03">Mar 2023</time></p><article class="award"><div class="art pink archive-art" aria-hidden="true"><div><small>AI</small><strong>II</strong></div></div><div class="card-copy"><h3>Hackathon — Thai Handwritten Character Recognition</h3><p>(Mar 2023): 🥈 #2 of 53 on the private leaderboard · Five-model ensemble</p></div></article></li>
 <li class="competition-card"><p class="competition-date"><span class="competition-no" aria-hidden="true">03</span><time datetime="2023-07">Jul 2023</time></p><article class="award"><div class="art gold archive-art" aria-hidden="true"><div><small>AI</small><strong>I</strong></div></div><div class="card-copy"><h3>Hackathon — Fake Number Detection</h3><p>(Jul 2023): 🥇 Winner · Digital forensics using ELA and EVA-02</p></div></article></li>
 <li class="competition-card"><p class="competition-date"><span class="competition-no" aria-hidden="true">04</span><time datetime="2023-07">Jul 2023</time></p><article class="award"><div class="art gold archive-art" aria-hidden="true"><div><small>AI</small><strong>I</strong></div></div><div class="card-copy"><h3>Hackathon — Multi-Modal Classification</h3><p>(Jul 2023): 🥇 Winner · Zero-shot learning with xlm-roberta-large-ViT-H-14 / CLIP</p></div></article></li>
@@ -117,7 +128,7 @@ section{padding:75px 0;border-bottom:1px solid var(--line)}.sec-head{display:gri
 <li class="competition-card"><p class="competition-date"><span class="competition-no" aria-hidden="true">15</span><time datetime="2025-06">Jun 2025</time></p><article class="award"><div class="art gold archive-art" aria-hidden="true"><div><small>AI</small><strong>I</strong></div></div><div class="card-copy"><h3>AI Benchmark 2025 — Chinese-to-Thai Machine Translation</h3><p>(Jun 2025): 🥇 Top prize · Fine-tuned LLM on Chinese–Thai medical corpus</p></div></article></li>
 <li class="competition-card"><p class="competition-date"><span class="competition-no" aria-hidden="true">16</span><time datetime="2025-08">Aug 2025</time></p><article class="award"><div class="art blue"><svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M0 40H400M0 80H400M0 120H400M50 0v170m50-170v170m50-170v170m50-170v170m50-170v170m50-170v170m50-170v170" stroke="#f7ceff" opacity=".1"/><g transform="translate(263 43)" fill="none" stroke="#d4c3ff" stroke-width="1.5"><path d="M16 0h65l24 24v76H16z" opacity=".85"/><path d="M81 0v25h24M31 37h50m-50 12h59m-59 13h38m-38 13h52"/><path d="M0 14h12v98h79" opacity=".5"/><path class="dash" d="M-100 99H7m100-66h31" opacity=".75"/><circle cx="-80" cy="99" r="5" fill="#d4c3ff"/></g></svg><div><small>AUG 2025 · AI FOR THAI</small><strong>Champion</strong></div></div><div class="card-copy"><h3>AI Thailand Hackathon</h3><p>Thai Audio Intelligence, a Thai voice agent built to make synthesized voices faster and more varied.</p><p class="meta">With Pitikorn Khlaisamniang</p><a class="textlink" href="https://www.ai.in.th/en/hackathon2025-result/">Organizer’s results →</a></div></article></li>
 <li class="competition-card"><p class="competition-date"><span class="competition-no" aria-hidden="true">17</span><time datetime="2026-03">Mar 2026</time></p><article class="award"><div class="art gold"><svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M0 40H400M0 80H400M0 120H400M50 0v170m50-170v170m50-170v170m50-170v170m50-170v170m50-170v170m50-170v170" stroke="#f7ceff" opacity=".1"/><g transform="translate(299 77)" fill="none" stroke="#ffd298"><circle r="61" opacity=".4"/><circle r="51" opacity=".6" stroke-dasharray="2 5"/><circle r="44"/><path d="m0-28 8 18 19 3-14 13 3 20L0 16l-16 10 3-20-14-13 19-3z" fill="#ffd298" fill-opacity=".18"/><path class="dash" d="M-91 0h182M0-73v146" opacity=".55"/></g></svg><div><small>MAR 2026 · NECTEC</small><strong>1st Place</strong></div></div><div class="card-copy"><h3>LOTUSDIS + Secret Award</h3><p>Task 1: distant Thai meeting transcription. Also recognized for far-field microphone performance at 3 m and 10 m.</p><p class="meta">With Pitikorn Khlaisamniang</p><a class="textlink" href="https://www.linkedin.com/posts/konthee-boonmeeprakob-61691a25a_aithailandbenchmarkprograms2026-lotusdis-activity-7443714168572174336-U3gl">Award announcement →</a><a class="textlink" href="https://www.nectec.or.th/ace2026/ss14-ai-thailand-benchmark-programs-2026/">NECTEC winners’ panel →</a></div></article></li>
-<li class="competition-card"><p class="competition-date"><span class="competition-no" aria-hidden="true">18</span><time datetime="2026-08">Aug 2026</time></p><article class="award"><div class="art pink"><svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M0 40H400M0 80H400M0 120H400M50 0v170m50-170v170m50-170v170m50-170v170m50-170v170m50-170v170m50-170v170" stroke="#f7ceff" opacity=".1"/><g fill="#ffd0e9" transform="translate(158 90)"><rect class="bounce" x="0" y="-4" width="3" height="8" rx="2" opacity="0.35"/><rect class="bounce" x="8" y="-21" width="3" height="42" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="16" y="-7" width="3" height="14" rx="2" opacity="0.77"/><rect class="bounce" x="24" y="-44" width="3" height="88" rx="2" opacity="0.35"/><rect class="bounce" x="32" y="-14" width="3" height="28" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="40" y="-43" width="3" height="86" rx="2" opacity="0.77"/><rect class="bounce" x="48" y="-15" width="3" height="30" rx="2" opacity="0.35"/><rect class="bounce" x="56" y="-20" width="3" height="40" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="64" y="-4" width="3" height="8" rx="2" opacity="0.77"/><rect class="bounce" x="72" y="-17" width="3" height="34" rx="2" opacity="0.35"/><rect class="bounce" x="80" y="-21" width="3" height="42" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="88" y="-36" width="3" height="72" rx="2" opacity="0.77"/><rect class="bounce" x="96" y="-33" width="3" height="66" rx="2" opacity="0.35"/><rect class="bounce" x="104" y="-34" width="3" height="68" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="112" y="-28" width="3" height="56" rx="2" opacity="0.77"/><rect class="bounce" x="120" y="-15" width="3" height="30" rx="2" opacity="0.35"/><rect class="bounce" x="128" y="-5" width="3" height="10" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="136" y="-12" width="3" height="24" rx="2" opacity="0.77"/><rect class="bounce" x="144" y="-30" width="3" height="60" rx="2" opacity="0.35"/><rect class="bounce" x="152" y="-21" width="3" height="42" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="160" y="-45" width="3" height="90" rx="2" opacity="0.77"/><rect class="bounce" x="168" y="-17" width="3" height="34" rx="2" opacity="0.35"/><rect class="bounce" x="176" y="-36" width="3" height="72" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="184" y="-8" width="3" height="16" rx="2" opacity="0.77"/><rect class="bounce" x="192" y="-6" width="3" height="12" rx="2" opacity="0.35"/><rect class="bounce" x="200" y="-5" width="3" height="10" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="208" y="-33" width="3" height="66" rx="2" opacity="0.77"/><rect class="bounce" x="216" y="-5" width="3" height="10" rx="2" opacity="0.35"/><rect class="bounce" x="224" y="-48" width="3" height="96" rx="2" opacity="0.5599999999999999"/></g></svg><div><small>AUG 2026 · AI FOR THAI</small><strong>2nd Place</strong></div></div><div class="card-copy"><h3>MeeCopilot</h3><p>Second place at AI for Thai Service Onboarding. MeeCopilot tracks live questions and links answers, decisions and action items to the meeting transcript.</p><p class="meta">With Pitikorn Khlaisamniang</p><a class="btn primary demo-cta" href="https://team13.aiforthai.in.th/">Try MeeCopilot ↗</a><a class="textlink" href="https://th.linkedin.com/in/konthee-boonmeeprakob-61691a25a/en">Konthee’s LinkedIn →</a><a class="textlink" href="https://events.ai.in.th/e/aift_service_onboarding">Organizer’s event page →</a></div></article></li></ol>
+<li class="competition-card"><p class="competition-date"><span class="competition-no" aria-hidden="true">18</span><time datetime="2026-08">Aug 2026</time></p><article class="award"><div class="art pink"><svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M0 40H400M0 80H400M0 120H400M50 0v170m50-170v170m50-170v170m50-170v170m50-170v170m50-170v170m50-170v170" stroke="#f7ceff" opacity=".1"/><g fill="#ffd0e9" transform="translate(158 90)"><rect class="bounce" x="0" y="-4" width="3" height="8" rx="2" opacity="0.35"/><rect class="bounce" x="8" y="-21" width="3" height="42" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="16" y="-7" width="3" height="14" rx="2" opacity="0.77"/><rect class="bounce" x="24" y="-44" width="3" height="88" rx="2" opacity="0.35"/><rect class="bounce" x="32" y="-14" width="3" height="28" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="40" y="-43" width="3" height="86" rx="2" opacity="0.77"/><rect class="bounce" x="48" y="-15" width="3" height="30" rx="2" opacity="0.35"/><rect class="bounce" x="56" y="-20" width="3" height="40" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="64" y="-4" width="3" height="8" rx="2" opacity="0.77"/><rect class="bounce" x="72" y="-17" width="3" height="34" rx="2" opacity="0.35"/><rect class="bounce" x="80" y="-21" width="3" height="42" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="88" y="-36" width="3" height="72" rx="2" opacity="0.77"/><rect class="bounce" x="96" y="-33" width="3" height="66" rx="2" opacity="0.35"/><rect class="bounce" x="104" y="-34" width="3" height="68" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="112" y="-28" width="3" height="56" rx="2" opacity="0.77"/><rect class="bounce" x="120" y="-15" width="3" height="30" rx="2" opacity="0.35"/><rect class="bounce" x="128" y="-5" width="3" height="10" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="136" y="-12" width="3" height="24" rx="2" opacity="0.77"/><rect class="bounce" x="144" y="-30" width="3" height="60" rx="2" opacity="0.35"/><rect class="bounce" x="152" y="-21" width="3" height="42" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="160" y="-45" width="3" height="90" rx="2" opacity="0.77"/><rect class="bounce" x="168" y="-17" width="3" height="34" rx="2" opacity="0.35"/><rect class="bounce" x="176" y="-36" width="3" height="72" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="184" y="-8" width="3" height="16" rx="2" opacity="0.77"/><rect class="bounce" x="192" y="-6" width="3" height="12" rx="2" opacity="0.35"/><rect class="bounce" x="200" y="-5" width="3" height="10" rx="2" opacity="0.5599999999999999"/><rect class="bounce" x="208" y="-33" width="3" height="66" rx="2" opacity="0.77"/><rect class="bounce" x="216" y="-5" width="3" height="10" rx="2" opacity="0.35"/><rect class="bounce" x="224" y="-48" width="3" height="96" rx="2" opacity="0.5599999999999999"/></g></svg><div><small>AUG 2026 · AI FOR THAI</small><strong>2nd Place</strong></div></div><div class="card-copy"><h3>MeeCopilot</h3><p>Second place at AI for Thai Service Onboarding. MeeCopilot tracks live questions and links answers, decisions and action items to the meeting transcript.</p><p class="meta">With Pitikorn Khlaisamniang</p><a class="btn primary demo-cta" href="https://team13.aiforthai.in.th/">Try MeeCopilot ↗</a><a class="textlink" href="https://th.linkedin.com/in/konthee-boonmeeprakob-61691a25a/en">Konthee’s LinkedIn →</a><a class="textlink" href="https://events.ai.in.th/e/aift_service_onboarding">Organizer’s event page →</a></div></article></li></ol><ol class="competition-context" aria-hidden="true"></ol></div>
 </div></div></div></section>
 </main><footer id="contact" class="contact"><div class="wrap"><h2>Let’s build something useful.</h2>
 <p>Available to discuss Thai-language AI, document intelligence and applied machine learning.</p><div class="ctas"><a class="btn primary" href="mailto:konthee1995@gmail.com">Email me →</a><a class="btn" href="https://www.linkedin.com/in/konthee-boonmeeprakob-61691a25a/">LinkedIn →</a><a class="btn" href="https://github.com/Konthee">GitHub →</a></div></div></footer><div class="wrap footer"><span>Konthee Boonmeeprakob · Bangkok, Thailand</span><a class="textlink" href="#home">Back to top ↑</a></div>
@@ -168,7 +179,7 @@ function applyLanguage(){
 theme.addEventListener('click',()=>{mode=mode==='dark'?'light':'dark';set('theme',mode);applyTheme()});
 for(const option of languageOptions){option.addEventListener('click',()=>{
  if(lang===option.dataset.lang)return;
- lang=option.dataset.lang;set('language',lang);applyLanguage();syncCompetition();renderCompetition();
+ lang=option.dataset.lang;set('language',lang);applyLanguage();syncCompetition();if(active>=0)renderCompetitionContext(active);renderCompetition();
 });}
 motion.addEventListener('click',()=>{paused=!paused;set('motion',paused?'off':'on');applyMotion()});
 reduce.addEventListener?.('change',applyMotion);
@@ -183,7 +194,7 @@ if('IntersectionObserver' in window){
 
 const runway=$('.competition-runway'),stage=$('.competition-stage');
 const competitionCards=[...document.querySelectorAll('.competition-card')];
-const controls=$('.competition-controls'),counter=$('.competition-count'),showAll=$('.competition-mode');
+const controls=$('.competition-controls'),counter=$('.competition-count'),showAll=$('.competition-mode'),context=$('.competition-context');
 const previous=$('.competition-prev'),next=$('.competition-next');
 const shortScreen=matchMedia('(max-height: 425px)');
 const clamp=(x,lo,hi)=>Math.min(hi,Math.max(lo,x));
@@ -196,7 +207,7 @@ function refreshCompetitionLabels(){
 function syncCompetition(){
  const oldMode=sequenced;
  sequenced=!paused&&!reduce.matches&&!shortScreen.matches&&!allMode;
- stageTop=Math.ceil($('.top').getBoundingClientRect().height)+13;
+ stageTop=Math.max(Math.ceil($('.top').getBoundingClientRect().height)+15,Math.round(innerHeight*(innerWidth>860?.17:.13)));
  runway.style.setProperty('--stage-top',stageTop+'px');
  runway.toggleAttribute('data-sequenced',sequenced);
  controls.hidden=paused||reduce.matches||shortScreen.matches;
@@ -210,25 +221,40 @@ function syncCompetition(){
 }
 function competitionStep(pos,n){
  const p=clamp(pos,0,n),i=Math.min(n-1,Math.floor(p)),local=p-i;
- const fadeIn=i===0?1:clamp(local/.17,0,1),fadeOut=i===n-1?1:clamp((1-local)/.17,0,1);
- return {i,opacity:Math.min(fadeIn,fadeOut),shift:13*(fadeOut-fadeIn)};
+ const smooth=x=>x*x*(3-2*x);
+ const enter=i===0?1:smooth(clamp(local/.29,0,1));
+ const exit=i===n-1?1:smooth(clamp((1-local)/.29,0,1));
+ return {i,opacity:enter*exit,shift:46*(exit-enter),scale:.968+.032*enter*exit};
+}
+function renderCompetitionContext(i){
+ const first=clamp(i-1,0,Math.max(0,slides-3));
+ context.replaceChildren(...competitionCards.slice(first,first+3).map((card,k)=>{
+  const row=document.createElement('li'),date=document.createElement('span'),title=document.createElement('span');
+  date.textContent=card.querySelector('time').textContent;
+  title.textContent=card.querySelector('h3').textContent;
+  if(k+first===i)row.setAttribute('data-highlight','');
+  row.append(date,title);
+  return row;
+ }));
 }
 function renderCompetition(){
  if(!sequenced)return;
  const bounds=runway.getBoundingClientRect();
  const span=Math.max(1,runway.offsetHeight-stage.offsetHeight);
  const progress=clamp((stageTop-bounds.top)/span,0,1);
- const {i,opacity,shift}=competitionStep(progress*slides,slides);
+ const {i,opacity,shift,scale}=competitionStep(progress*slides,slides);
  if(i!==active){
   active=i;
   competitionCards.forEach((card,j)=>{card.hidden=j!==i;card.toggleAttribute('data-current',j===i)});
   counter.textContent=String(i+1).padStart(2,'0')+' / '+slides;
+  renderCompetitionContext(i);
   previous.setAttribute('aria-disabled',String(i===0));
   next.setAttribute('aria-disabled',String(i===slides-1));
  }
  stage.style.setProperty('--story-progress',progress);
  stage.style.setProperty('--card-opacity',opacity);
  stage.style.setProperty('--card-shift',shift+'px');
+ stage.style.setProperty('--card-scale',scale);
 }
 function goToCompetition(i){
  const span=Math.max(1,runway.offsetHeight-stage.offsetHeight);
