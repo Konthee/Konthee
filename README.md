@@ -11,6 +11,10 @@ I build applied AI systems for Thai-language documents, speech, and data. My wor
 
 **Thai document AI · Speech recognition · ML and data engineering**
 
+**Open to AI opportunities**  
+Senior Applied AI Engineer · Forward Deployed AI Engineer · AI Solutions Architect  
+Open to full-time, part-time and consulting work, with a preference for roles I can do remotely from Thailand.
+
 [![Portfolio](https://img.shields.io/badge/Portfolio-konthee.github.io-0A66C2?style=for-the-badge&logo=githubpages&logoColor=white)](https://konthee.github.io/Konthee/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Konthee%20Boonmeeprakob-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/konthee-boonmeeprakob-61691a25a/)
 [![Email](https://img.shields.io/badge/Email-konthee1995%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:konthee1995@gmail.com)
