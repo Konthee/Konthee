@@ -73,6 +73,14 @@ My background is in physics and machine learning. I work across modeling, data p
 
 ---
 
+## Selected Enterprise AI Work
+
+- Built internal AI assistants that retrieve relevant documents and turn natural-language questions into read-only SQL queries.
+- Designed the AWS architecture and enforced role-based data access down to the row and column level.
+- Built repeatable evaluations to measure answer quality, latency and cost, then used the results to reduce unnecessary tool calls.
+
+---
+
 ## 🧩 Selected AI Projects
 
 | Area | Project / System | Highlights |
