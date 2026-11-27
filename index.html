@@ -131,6 +131,10 @@ section{padding:75px 0;border-bottom:1px solid var(--line)}.sec-head{display:gri
 @keyframes cover-wave{50%{scale:1 1.075;opacity:.74}}
 @keyframes cover-flow{to{stroke-dashoffset:-60}}
 @media(min-width:901px){.competition-trail{--rail-lead:clamp(115px,24svh,225px);padding-top:var(--rail-lead)}.competition-trail::before{top:var(--rail-lead)}}
+
+.competition-runway[data-sequenced] .competition-stage{overflow-anchor:none}
+[data-sequenced] .competition-card{transform:none}
+@media(min-width:901px){.competition-trail{padding-bottom:clamp(170px,33svh,320px)}.competition-trail::before{bottom:clamp(170px,33svh,320px)}}
 </style></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap">
@@ -284,10 +288,18 @@ function syncCompetition(){
  const oldMode=sequenced;
  sequenced=!allMode;
  navHeight=Math.ceil($('.top').getBoundingClientRect().height);
- if(!oldMode){stageTop=navHeight+12;runway.style.setProperty('--stage-top',stageTop+'px');}
  runway.toggleAttribute('data-sequenced',sequenced);
  trail.hidden=previous.hidden=next.hidden=!sequenced;
  controls.hidden=false;
+ if(sequenced){
+  const controlsBeforeCard=stage.querySelector('.competition-deck').getBoundingClientRect().top-stage.getBoundingClientRect().top+32;
+  const compact=innerWidth<=900;
+  const cardReserve=compact?365:clamp(innerHeight*.5,355,405);
+  const floor=navHeight+12;
+  const ceiling=Math.max(floor,innerHeight-controlsBeforeCard-cardReserve-16);
+  stageTop=Math.round(clamp(innerHeight*(compact?.35:.485)-controlsBeforeCard,floor,ceiling));
+  runway.style.setProperty('--stage-top',stageTop+'px');
+ }
  if(!sequenced){
   active=-1;
   competitionCards.forEach(card=>{card.hidden=false;card.inert=false;card.removeAttribute('data-current');card.removeAttribute('aria-hidden')});
@@ -304,26 +316,12 @@ function trackPosition(){
 }
 function competitionStep(p,n,still){
  const nearest=clamp(Math.floor(p),0,n-1);
- if(still)return [{i:nearest,opacity:1,shift:0,primary:true}];
+ if(still)return [{i:nearest,opacity:1,primary:true}];
  const boundary=Math.round(p),blendWidth=.29;
- if(boundary<=0||boundary>=n||Math.abs(p-boundary)>=blendWidth)return [{i:nearest,opacity:1,shift:0,primary:true}];
+ if(boundary<=0||boundary>=n||Math.abs(p-boundary)>=blendWidth)return [{i:nearest,opacity:1,primary:true}];
  const t=clamp((p-boundary+blendWidth)/(2*blendWidth),0,1);
  const mix=t*t*(3-2*t);
- return [{i:boundary-1,opacity:1-mix,shift:-27*mix,primary:mix<.5},{i:boundary,opacity:mix,shift:27*(1-mix),primary:mix>=.5}];
-}
-function centerCompetitionStage(layers){
- const stageRect=stage.getBoundingClientRect();
- const deckHeight=stage.querySelector('.competition-deck').offsetHeight;
- let midpoint=0,visibleBottom=0;
- for(const {i,opacity,shift} of layers){
-  const box=competitionCards[i].querySelector('.award').getBoundingClientRect();
-  midpoint+=(box.top-stageRect.top-shift+box.height/2)*opacity;
-  visibleBottom=Math.max(visibleBottom,box.bottom-stageRect.top-shift);
- }
- const floor=navHeight+12;
- const ceiling=Math.max(floor,innerHeight-Math.max(visibleBottom+16,deckHeight+30)-10);
- const target=Math.round(clamp((innerHeight+navHeight)/2-midpoint,floor,ceiling));
- if(target!==stageTop){stageTop=target;runway.style.setProperty('--stage-top',target+'px');}
+ return [{i:boundary-1,opacity:1-mix,primary:mix<.5},{i:boundary,opacity:mix,primary:mix>=.5}];
 }
 function renderCompetition(){
  if(!sequenced)return false;
@@ -336,13 +334,12 @@ function renderCompetition(){
  const layers=competitionStep(playhead,slides,still);
  const ids=layers.map(l=>l.i);
  painted.filter(i=>!ids.includes(i)).forEach(i=>{const card=competitionCards[i];card.hidden=true;card.inert=true;card.removeAttribute('data-current')});
- for(const {i,opacity,shift,primary} of layers){
+ for(const {i,opacity,primary} of layers){
   const card=competitionCards[i];card.hidden=false;card.inert=!primary;
   card.setAttribute('aria-hidden',String(!primary));card.toggleAttribute('data-current',primary);
-  card.style.setProperty('--card-opacity',opacity);card.style.setProperty('--card-shift',shift+'px');
+  card.style.setProperty('--card-opacity',opacity);
  }
  painted=ids;
- centerCompetitionStage(layers);
  const i=layers.find(l=>l.primary).i;
  if(i!==active){
   active=i;
